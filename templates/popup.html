@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>YouTube Transcript Summary</title>
+  <link rel="stylesheet" href="popup.css">
+  <style>
+    body {
+   /* Replace 'background-image.jpg' with your actual image file path */
+    background-image: url("https://motioncue.com/wp-content/uploads/2020/07/Animated-Videos-for-YouTube.jpg");
+    background-repeat: no-repeat;
+    /* /* background-size: cover; */
+    /* background-position: center; */
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.wrap {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #fff;
+}
+
+#summary-form {
+    margin-top: 20px;
+}
+
+label {
+    color: #fff;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#summary-text {
+    color: #fff;
+    margin-top: 20px;
+    text-align: left;
+}
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1 style="color: green;">Summary</h1>
+    <form id="summary-form" action="/summarize/check" method="GET">
+      <label for="youtube_url" style="color: green;">YouTube URL:</label>
+      <input type="text" id="youtube_url" name="youtube_url" required>
+      <button class="btn" type="submit">
+        <span>Generate Summary</span>
+      </button>
+    </form>
+
+    <p id="summary-text"></p>
+  </div>
+
+  <script src="popup.js"  type="text/javascript"></script>
+</body>
+</html>

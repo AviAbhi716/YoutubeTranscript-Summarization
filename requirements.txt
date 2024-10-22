@@ -1,0 +1,7 @@
+js~=1.0
+Flask~=2.0.1
+transformers~=4.6.1
+pydantic~=1.8.2
+Werkzeug~=2.0.1
+https://chat.openai.com/c/c898dbe8-4121-47af-b3d1-cb4fef3166e5
+http://127.0.0.1:5000/summarize/check?youtube_url=https://www.youtube.com/watch?v=Dj4P7TWkmog
